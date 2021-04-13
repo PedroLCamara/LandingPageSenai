@@ -218,3 +218,83 @@ footer span{
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
+
+
+@media (max-width: 420px){
+    .container_grid{
+        margin: 0 auto;
+        width: 420px;
+    }
+    .container_banner{
+        display: flex;
+        justify-content: center;
+        height: 430px;
+    }
+    .fundo_banner{
+        height: auto;
+        width: auto;
+    }
+    .box_conteudo_banner{
+        flex-direction: column;
+        top: 20vw;
+        left: 2vh;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        font-size: 60px;
+        width: 380px;
+        text-justify: auto;
+        padding-bottom: 20px;
+    }
+    .box_conteudo_banner span{
+        font-size: 30px;
+        width: 380px;
+        margin: 20px 0px;
+    }
+    .box_conteudo_banner img{
+        width: 80px;
+        height:80px;
+    }
+    .container_sobre{
+        padding-top: 0px;
+    }
+    .sobre_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 5vh;
+    }
+    .box_sobre_titulo_imagem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre_container img{
+        width: 86%;
+        height: 80%;
+    }
+    .sobre_container h2{
+        font-size: 60px;
+        margin: 50px 0;
+    }
+    .box_conteudo_sobre h3{
+        width: 360px;
+        font-size: 30px;
+        height: auto;
+    }
+    .box_conteudo_sobre span{
+        width: 360px;
+        font-size: 20px;
+    }
+    .box_conteudo_sobre p{
+        width: 360px;
+        font-size: 16px;
+        text-align: justify;
+        margin-bottom: 50px;
+    }
+    .sobre{
+        padding-top: 50px;
+    }
+}
