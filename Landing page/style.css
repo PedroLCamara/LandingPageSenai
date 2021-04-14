@@ -23,6 +23,9 @@ header{
     justify-content: flex-end;
     align-items: center;
 }
+.btn_menu{
+    display: none;
+}
 .nav_header{
     display: flex;
     justify-content: space-between;
@@ -39,14 +42,14 @@ main{
 }
 .container_banner{
     position: relative;
-    height: 740px;
+    height: 580px;
 }
 .fundo_banner{
     width: 100%;
 }
 .box_conteudo_banner{
     position: absolute;
-    top: 226px;
+    top: 50px;
     left: 121px;
     display: flex;
     flex-direction: column;
@@ -80,6 +83,7 @@ h1{
 .sobre_container{
     display: flex;
     justify-content: space-between;
+    width: 1200px;
 }
 .sobre{
     display:flex;
@@ -225,14 +229,40 @@ footer span{
         margin: 0 auto;
         width: 420px;
     }
+    header{
+        width: 100%;
+    }
+    .grid_header{
+        margin-left: 28px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .btn_menu{
+        display: unset;
+        font-size: 40px;
+        color: white;
+    }
+    .nav_header{
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        height: 400px;
+        background-color: black;
+    }
     .container_banner{
         display: flex;
         justify-content: center;
-        height: 430px;
+        height: 443px;
     }
     .fundo_banner{
-        height: auto;
-        width: auto;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     .box_conteudo_banner{
         flex-direction: column;
@@ -244,20 +274,20 @@ footer span{
         right: 0vw;
     }
     h1{
-        font-size: 60px;
-        width: 100vw;
+        font-size: 15vw;
+        width: 90vw;
         text-justify: auto;
         padding-bottom: 20px;
     }
     .box_conteudo_banner span{
-        font-size: 30px;
-        width: 100vw;
+        font-size: 7vw;
+        width: 90vw;
         margin: 20px;
     }
     .box_conteudo_banner img{
         width: 8vw;
         height: auto;
-        margin-bottom: 40px;
+        margin-bottom: unset;
     }
     .container_sobre{
         display: flex;
@@ -303,5 +333,59 @@ footer span{
     }
     .sobre{
         padding-top: 50px;
+    }
+    .container_informações{
+        height: auto;
+        background-size: cover;
+    }
+    .informacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box_informacao{
+        align-items: center;
+        margin: 20px 0;
+    }
+    .box_informacao h2{
+        width: 88vw;
+        text-align: center;
+    }
+    .box_informacao span{
+        width: 88vw;
+    }
+    .endereco_container{
+        height: 850px;
+        background-size: cover;
+    }
+    .endereco_box{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 80px;
+    }
+    .endereco_box h2{
+        width: 88vw;
+        font-size: 50px;
+        height: auto;
+        text-align: center;
+    }
+    .endereco_box p{
+        width: 88vw;
+        font-size: 30px;
+        height: auto;
+        padding: 8vw 4vw 10vw 4vw;
+    }
+    .endereco_box img{
+        position: unset;
+        width: 88vw;
+        height: auto;
+        margin: 0;
+    }
+    .grid_footer{
+        width: 88vw;
+        text-align: center;
     }
 }

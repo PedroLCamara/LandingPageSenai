@@ -6,13 +6,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/77a9a4e10d.js" crossorigin="anonymous"></script>
     <title>Landing page</title>
 </head>
 
 <body>
     <header>
         <div class="container_grid grid_header">
-            <nav class="nav_header">
+            <a class="btn_menu" href="#" onclick="botaoDoMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+            <nav id="menu_header" class="nav_header">
                 <a href="#">início</a>
                 <a href="#sobre_navegação">sobre</a>
                 <a href="#desafios_navegacao">desafios</a>
@@ -20,7 +24,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main onclick="botaoDoMenuFechar()">
         <section class="container_banner">
             <img class="fundo_banner" src="assets_/imagem-fundo-banner.png">
             <div class="box_conteudo_banner">
@@ -94,6 +98,25 @@
             <span>Copyright © 2020 - Escola Senai de Informática</span>
         </div>
     </footer>
+    <script>
+        function botaoDoMenu() {
+            var menu = document.getElementById("menu_header");
+            if (menu.style.display === "flex") {
+            //esconder o menu
+            menu.style.display = "none"
+            } else{
+             //mostrar o menu
+             menu.style.display = "flex"
+            }
+        }
+        function botaoDoMenuFechar() {
+            var menu = document.getElementById("menu_header");
+            if (menu.style.display === "flex") {
+            //esconder o menu
+            menu.style.display = "none"
+            }
+        }
+    </script>
 </body>
 
 </html>
