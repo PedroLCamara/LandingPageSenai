@@ -236,31 +236,35 @@ footer span{
     }
     .box_conteudo_banner{
         flex-direction: column;
-        top: 20vw;
-        left: 2vh;
+        top: 10vh;
+        left: 3vw;
         justify-content: center;
         align-items: center;
+        margin: 0 40px;
+        right: 0vw;
     }
     h1{
         font-size: 60px;
-        width: 380px;
+        width: 100vw;
         text-justify: auto;
         padding-bottom: 20px;
     }
     .box_conteudo_banner span{
         font-size: 30px;
-        width: 380px;
-        margin: 20px 0px;
+        width: 100vw;
+        margin: 20px;
     }
     .box_conteudo_banner img{
-        width: 80px;
-        height:80px;
+        width: 8vw;
+        height: auto;
+        margin-bottom: 40px;
     }
     .container_sobre{
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 0px;
+        padding-bottom: 30px;
     }
     .sobre_container{
         display: flex;
@@ -275,27 +279,27 @@ footer span{
         align-items: center;
     }
     .sobre_container img{
-        width: 86%;
-        height: 80%;
+        width: 88vw;
     }
     .sobre_container h2{
-        font-size: 60px;
+        width: 88vw;
+        font-size: 50px;
         margin: 50px 0;
     }
     .box_conteudo_sobre h3{
-        width: 380px;
+        width: 88vw;
         font-size: 30px;
         height: auto;
     }
     .box_conteudo_sobre span{
-        width: 380px;
+        width: 88vw;
         font-size: 20px;
     }
     .box_conteudo_sobre p{
-        width: 380px;
+        width: 88vw;
         font-size: 16px;
         text-align: justify;
-        margin-bottom: 50px;
+        height: auto;
     }
     .sobre{
         padding-top: 50px;
