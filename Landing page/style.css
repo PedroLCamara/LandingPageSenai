@@ -257,6 +257,9 @@ footer span{
         height:80px;
     }
     .container_sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-top: 0px;
     }
     .sobre_container{
@@ -280,16 +283,16 @@ footer span{
         margin: 50px 0;
     }
     .box_conteudo_sobre h3{
-        width: 360px;
+        width: 380px;
         font-size: 30px;
         height: auto;
     }
     .box_conteudo_sobre span{
-        width: 360px;
+        width: 380px;
         font-size: 20px;
     }
     .box_conteudo_sobre p{
-        width: 360px;
+        width: 380px;
         font-size: 16px;
         text-align: justify;
         margin-bottom: 50px;
