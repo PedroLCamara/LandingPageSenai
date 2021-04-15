@@ -227,7 +227,7 @@ footer span{
 @media (max-width: 420px){
     .container_grid{
         margin: 0 auto;
-        width: 420px;
+        width: 88vw;
     }
     header{
         width: 100%;
