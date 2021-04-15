@@ -13,20 +13,20 @@
 <body>
     <header>
         <div class="container_grid grid_header">
-            <a class="btn_menu" href="#" onclick="botaoDoMenu()">
+            <a class="btn_menu" href="javascript:void(0)" onclick="botaoDoMenu()">
                 <i class="fas fa-bars"></i>
             </a>
             <nav id="menu_header" class="nav_header">
-                <a href="#">início</a>
-                <a href="#sobre_navegação">sobre</a>
-                <a href="#desafios_navegacao">desafios</a>
-                <a href="#endereco_navegacao">endereço</a>
+                <a onclick="botaoDoMenuFechar()" href="#">início</a>
+                <a onclick="botaoDoMenuFechar()" href="#sobre_navegação">sobre</a>
+                <a onclick="botaoDoMenuFechar()" href="#desafios_navegacao">desafios</a>
+                <a onclick="botaoDoMenuFechar()" href="#endereco_navegacao">endereço</a>
             </nav>
         </div>
     </header>
     <main onclick="botaoDoMenuFechar()">
         <section class="container_banner">
-            <img class="fundo_banner" src="assets_/imagem-fundo-banner.png">
+            <img class="fundo_banner"  src="assets_/imagem-fundo-banner.png">
             <div class="box_conteudo_banner">
                 <h1>desenvolvimento de sistemas 2021</h1>
                 <span>senai informatica</span>
@@ -99,21 +99,31 @@
         </div>
     </footer>
     <script>
-        function botaoDoMenu() {
-            var menu = document.getElementById("menu_header");
-            if (menu.style.display === "flex") {
-            //esconder o menu
-            menu.style.display = "none"
+        if (screen.width <= 420) {
+            function botaoDoMenu() {
+                    var menu = document.getElementById("menu_header");
+                    if (menu.style.display === "flex") {
+                        //esconder o menu
+                        menu.style.display = "none"
+                    } else {
+                        //mostrar o menu
+                        menu.style.display = "flex"
+                    }
+                }
+                function botaoDoMenuFechar() {
+                    var menu = document.getElementById("menu_header");
+                    if (menu.style.display === "flex") {
+                        //esconder o menu
+                        menu.style.display = "none"
+                    }
+                }
+            } else 
+        window.onresize = () => {
+            if (screen.width > 420) {
+                var menu = document.getElementById("menu_header");
+                menu.style.display = "flex";
             } else{
-             //mostrar o menu
-             menu.style.display = "flex"
-            }
-        }
-        function botaoDoMenuFechar() {
-            var menu = document.getElementById("menu_header");
-            if (menu.style.display === "flex") {
-            //esconder o menu
-            menu.style.display = "none"
+                menu.style.display = "none";
             }
         }
     </script>
